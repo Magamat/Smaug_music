@@ -1,0 +1,49 @@
+
+.top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .circle {
+        background: #19a4d2;
+
+        &.invisible {
+            // background: none;
+            // cursor: default;
+            // color: none;
+            visibility: hidden;
+        }
+    }
+    
+}
+
+.bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .circle {
+        background: #1976d2;
+    }
+}
+
+
+.circle {
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+    color: white;
+    cursor: pointer;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        font-weight: bold;
+        box-shadow: 0 3px 6px 0 rgba(105,105,105, 0.75);
+    }
+}

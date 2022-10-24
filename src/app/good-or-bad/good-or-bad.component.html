@@ -1,0 +1,5 @@
+<div class="list center">   
+    <div *ngFor="let feedback of feedbacks" @fadeIn @fadeOut>
+        <div class="item">{{feedback ? '✅' : '❌'}}</div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+
+<div *ngIf="!endGame">
+    <app-score [score]="score" [highScore]="highScore" [heart]="heart">
+      score
+    </app-score>
+
+    <app-sheet [quiz]="quiz">
+      sheet
+    </app-sheet>
+
+    <app-good-or-bad [feedbacks]="feedbacks">
+        feedback: good or bad 
+    </app-good-or-bad>
+
+    <app-round-keys (keyChange)="reactToKey($event)">
+      keys
+    </app-round-keys>
+
+</div>
+<div *ngIf="endGame">
+    Game over !
+</div>
